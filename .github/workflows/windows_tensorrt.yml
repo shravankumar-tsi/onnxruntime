@@ -66,7 +66,7 @@ jobs:
           Add-Content -Path $env:GITHUB_PATH -Value "$env:RUNNER_TEMP\TensorRT-10.14.1.48.Windows.win10.cuda-12.9\lib"
           Add-Content -Path $env:GITHUB_PATH -Value "$env:RUNNER_TEMP\TensorRT-10.14.1.48.Windows.win10.cuda-12.9\bin"
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: '20.x'
 
@@ -182,7 +182,7 @@ jobs:
           python-version: '3.12'
           architecture: x64
 
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: '20.x'
 
